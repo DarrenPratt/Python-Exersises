@@ -78,7 +78,7 @@ To run the unit tests included in the repository:
     python -m unittest test_math_functions.py
     ```
 
-This command will execute all the test cases written in the `test_math_functions.py` file.
+This command will execute all the test cases written in the `SimpleTest.py` file.
 
 ---
 
