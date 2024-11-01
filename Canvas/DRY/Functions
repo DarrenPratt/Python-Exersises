@@ -1,0 +1,103 @@
+def net(income, outgoings): 
+   total = income - outgoings 
+   print(total) 
+
+net(50,30) 
+
+def net(income, outgoings): 
+   total = income - outgoings 
+   print(total) 
+
+jan = net(1239,578) 
+feb = net(549,893) 
+
+'''
+def net(income, outgoings): 
+   total = income - outgoings 
+   print(total)    
+
+jan = net(1239,578) 
+feb = net(549,893)  
+
+jan_feb_total = jan + feb 
+
+'''
+def net(income, outgoings): 
+   total = income - outgoings 
+   return total  # Return the total instead of printing it
+
+# Calculate net values for January and February
+jan = net(1239, 578) 
+feb = net(549, 893)  
+
+# Add the results of January and February
+jan_feb_total = jan + feb
+
+# Print the total of both months
+print("Total for January and February:", jan_feb_total)
+
+'''
+def greet(): 
+    name = input("What is your name? ") 
+    print(f"Hello {name}") 
+
+greet() 
+'''
+
+'''
+It is better to ask for the input outside of the function call and remove the input instruction from the definition:
+'''
+
+def greet(name):
+    return f"Hello {name}"
+
+# name = input("What is your name? ")
+# print(greet(name))
+
+
+# Default Values 
+
+def mon_spend (salary, spend): 
+    total = salary - spend 
+    return total 
+
+mon_spend (2000, 136) 
+
+
+'''
+But what if your salary is the same every month? You can include a default value for an argument in your definition,
+that is used if no value is given when the function is called:
+ '''
+
+def mon_spend (spend, salary=2000): 
+    total = salary - spend 
+    return total 
+
+feb = mon_spend (136) 
+print(f"Feb savings total: £{feb}")
+
+'''
+If you are using default values, the order of arguments is important.
+See what happens when you switch default value first in the definition and call the function,
+ as in the example below: 
+'''
+
+'''
+def mon_spend (salary=2000, spend): 
+    total = salary - spend 
+    return total 
+
+mon_spend (136) 
+print(f"Feb savings total: £{feb}") 
+'''
+
+def capital_city (country,city): 
+    print(f"The capital city of {country} is {city}.")      
+
+capital_city("Spain","Madrid") 
+
+
+def capital_city (country,city): 
+    print(f"The capital city of {country} is {city}.")
+
+capital_city(city = "Madrid", country = "Spain")
